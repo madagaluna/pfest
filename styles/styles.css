@@ -4,9 +4,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .container {
-    background-color: #c9f3cd; /* Light green background */
-    border: 5px solid #006400; /* Dark green border */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9f3cd;
+    border: 5px solid #006400;
     border-radius: 10px;
     padding: 20px;
 }
@@ -44,6 +48,7 @@ a:hover {
 
 .content {
     display: flex;
+    justify-content: space-between;
 }
 
 .left-column,

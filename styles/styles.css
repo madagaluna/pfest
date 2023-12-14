@@ -9,6 +9,25 @@ body {
     background-color: #f4f4f4; /* Adding a light background color */
 }
 
+.centered-video {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align to the bottom */
+    height: 60vh; /* Adjust the height as needed */
+    background-color: #fff; /* White background */
+    border: 2px solid #ddd; /* Adding a border */
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.centered-video iframe {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    transform: translateY(50%); /* Move the iframe upward by 50% of its height */
+}
+
+
 /* Form Styles */
 form {
     width: 30rem;
@@ -70,5 +89,35 @@ form button[type=submit] {
     color: #fff; /* Text color */
     cursor: pointer;
     border: none; /* Remove button border */
+}
+
+/* Additional Styles for Homepage Sections */
+.layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.screen-section,
+.carousel-section,
+.image-section {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff; /* White background for sections */
+    border-radius: 10px;
+}
+
+.screen-section iframe,
+.carousel img,
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-space {
+    margin-top: 10px;
+    font-style: italic;
 }
 

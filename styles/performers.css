@@ -1,4 +1,3 @@
-
 .performers-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,45 +9,30 @@
     width: calc(33.33% - 20px);
     margin: 10px;
     padding: 15px;
-    border: 2px solid #ddd; /* Thicker border */
-    background-color: #fff; /* White background */
-    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
 .performer-photo {
     max-width: 100%;
     height: auto;
-    border: 4px solid #333; /* Thicker border around photos */
-    border-radius: 8px; /* Rounded corners */
 }
 
 .performer-name {
     font-weight: bold;
+    font-size: 1.5rem;
     margin-top: 10px;
-    font-size: 1.2rem; /* Adjusted font size */
 }
 
 .performer-description {
+    font-size: 1rem;
     margin-top: 10px;
 }
 
 .performer-social-media {
     color: #007bff;
-}
-
-.performer-address {
-    margin-top: 10px;
+    font-size: 0.8rem;
     font-style: italic;
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .performer-card {
-        width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .performer-card {
-        width: calc(100% - 20px);
-    }
-}

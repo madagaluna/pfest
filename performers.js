@@ -21,7 +21,7 @@ function populatePerformers(performersData) {
         // Create an image element for the performer photo
         const performerPhoto = document.createElement('img');
         performerPhoto.classList.add('performer-photo');
-        performerPhoto.src = performer.Photo;
+        performerPhoto.src = 'images/' + performer.Photo; // Assuming images are in the "images" directory
         performerPhoto.alt = performer.PerformingName;
 
         // Create elements for performer information
@@ -37,16 +37,11 @@ function populatePerformers(performersData) {
         performerSocialMedia.classList.add('performer-social-media');
         performerSocialMedia.innerHTML = `<a href="${performer.SocialMedia}" target="_blank">Social Media Link</a>`;
 
-        const performerAddress = document.createElement('div');
-        performerAddress.classList.add('performer-address');
-        performerAddress.textContent = performer.PrearrangedAddress;
-
         // Append elements to the performer card
         performerCard.appendChild(performerPhoto);
         performerCard.appendChild(performerName);
         performerCard.appendChild(performerDescription);
         performerCard.appendChild(performerSocialMedia);
-        performerCard.appendChild(performerAddress);
 
         // Append the performer card to the container
         performersContainer.appendChild(performerCard);

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Adding a light background color */
+}
+
+/* Form Styles */
+form {
+    width: 30rem;
+    margin: auto; /* Center the form */
+    background-color: #fff; /* White background */
+    padding: 2rem;
+    border: 2px solid #ddd; /* Adding a border */
+    border-radius: 10px;
+}
+
+form label,
+form button,
+form textarea,
+form input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd; /* Thicker border */
+}
+
+form textarea {
+    height: 5rem;
+}
+
+form input[type=checkbox],
+form input[type=radio] {
+    display: inline;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+form input[type=text],
+form input[type=date],
+form input[type=email],
+form input[type=number],
+form textarea {
+    font-size: 1rem; /* Adjusted font size */
+}
+
+form label:has(input[type=radio]),
+form label:has(input[type=checkbox]) {
+    margin-bottom: 0;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+}
+
+form button[type=submit] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    border: none; /* Remove button border */
+}
+

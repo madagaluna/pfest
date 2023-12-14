@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/pristine.css" />
+    <script src="https://cdn.jsdelivr.net/npm/pristinejs@1.1.0/dist/pristine.min.js" integrity="sha256-Fi/VbGBmOFo+PFvaQmZ7LCcvrTrTFFvUYIDPnAIOyB4=" crossorigin="anonymous"></script>
+    <script src="scripts/validation.js"></script>
+
+</head>
+<body>
+    <h1>Performer Registration Form</h1>
+    <form>
+
+        <!-- Performing Name -->
+        <label for="performingName">Performing Name:</label>
+        <input type="text" id="performingName" name="performingName" required>
+
+        <!-- Description -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <!-- Social Media -->
+        <label for="socialMedia">Social Media:</label>
+        <input type="text" id="socialMedia" name="socialMedia">
+
+
+        <!-- Performance Address -->
+        <label for="performanceAddress">Performance Address:</label>
+        <input type="text" id="performanceAddress" name="performanceAddress" placeholder="Street Number and Name" required>
+
+        <!-- Upload Photo -->
+        <label for="photo">Upload Photo (Label your photo as "performing-name.jpg" AKA the-monkees.jpg):</label>
+        <input type="file" id="photo" accept=".jpg" required>
+        <p class="error-message" id="photoError"></p>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Navigation to other pages -->
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="performers.html">Performers</a></li>    
+    </ul>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

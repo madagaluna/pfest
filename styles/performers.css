@@ -1,38 +1,71 @@
-.performers-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* form styles */
+form {
+    width: 30rem;
 }
 
-.performer-card {
-    box-sizing: border-box;
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: center;
+form label,
+form button,
+form textarea,
+form input {
+    display: block;
+    margin-bottom: 1rem;
 }
 
-.performer-photo {
-    max-width: 100%;
-    height: auto;
+form input,
+form textarea {
+    width: 100%
 }
 
-.performer-name {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 10px;
+form textarea {
+    height: 5rem;
 }
 
-.performer-description {
+form input[type=checkbox],
+form input[type=radio] {
+    display: inline;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+form input[type=text],
+form input[type=date],
+form input[type=email],
+form input[type=number],
+form textarea {
+    font-size: 1.25rem;
+}
+
+form label:has(input[type=radio]),
+form label:has(input[type=checkbox]) {
+    margin-bottom: 0;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+}
+
+form button[type=submit] {
     font-size: 1rem;
-    margin-top: 10px;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
-.performer-social-media {
-    color: #007bff;
-    font-size: 0.8rem;
-    font-style: italic;
-    margin-top: 10px;
+footer {
+    margin-top: 2rem;
+    border-top: 2px solid black;
 }
 
+a:link,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}

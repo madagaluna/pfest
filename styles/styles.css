@@ -1,41 +1,75 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Adding a light background color */
+    font-family: Arial, sans-serif;
 }
 
-.centered-video {
+.container {
+    background-color: #c9f3cd; /* Light green background */
+    border: 5px solid #006400; /* Dark green border */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #006400; /* Dark green font color */
+}
+
+nav {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Align to the bottom */
-    height: 60vh; /* Adjust the height as needed */
-    background-color: #fff; /* White background */
-    border: 2px solid #ddd; /* Adding a border */
-    border-radius: 10px;
-    margin: 20px;
-    overflow: hidden; /* Hide overflow content */
+    margin-top: 10px;
 }
 
-.centered-video iframe {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    transform: translateY(50%); /* Move the iframe upward by 50% of its height */
+a {
+    display: inline-block; /* Ensures the entire link is clickable and has a background */
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none; /* Remove the default underline for anchor elements */
+}
+
+a:hover {
+    background-color: #004d00; /* Darken the background on hover */
 }
 
 
-/* Form Styles */
+.content {
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.box {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#map_container {
+    width: 80%;
+    height: 60vh;
+    border: thin solid var(--ink);
+    margin: 0 auto;
+}
+
 form {
     width: 30rem;
-    margin: auto; /* Center the form */
-    background-color: #fff; /* White background */
-    padding: 2rem;
-    border: 2px solid #ddd; /* Adding a border */
-    border-radius: 10px;
 }
 
 form label,
@@ -48,9 +82,7 @@ form input {
 
 form input,
 form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd; /* Thicker border */
+    width: 100%
 }
 
 form textarea {
@@ -69,7 +101,7 @@ form input[type=date],
 form input[type=email],
 form input[type=number],
 form textarea {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1.25rem;
 }
 
 form label:has(input[type=radio]),
@@ -85,39 +117,21 @@ form button[type=submit] {
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: #007bff; /* Button color */
-    color: #fff; /* Text color */
-    cursor: pointer;
-    border: none; /* Remove button border */
 }
 
-/* Additional Styles for Homepage Sections */
-.layout-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+a:link,
+a:visited {
+    color: rgb(166, 255, 0);
+    text-decoration: none;
 }
 
-.screen-section,
-.carousel-section,
-.image-section {
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    background-color: #fff; /* White background for sections */
-    border-radius: 10px;
+a:hover,
+a:active {
+    text-decoration: underline;
 }
 
-.screen-section iframe,
-.carousel img,
-.image-section img {
-    max-width: 100%;
-    height: auto;
-}
 
-.text-space {
-    margin-top: 10px;
-    font-style: italic;
+footer {
+    margin-top: auto;
+    text-align: center;
 }
-

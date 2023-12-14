@@ -1,7 +1,5 @@
 "use strict";
-/* this will add a pristine validator to all forms on a page! 
-   it uses the default pristinejs configuration 
-*/
+
 
 document.addEventListener("DOMContentLoaded",function(){
     let forms = document.querySelectorAll('form');
